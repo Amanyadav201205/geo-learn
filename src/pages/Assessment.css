@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fde6e6, #fff0f6, #e6f7ff);
+}
+
+/* Navbar */
+.navbar {
+  text-align: center;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.active {
+  color: red !important;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+}
+
+/* Timer */
+.timerBox {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #d32f2f;
+}
+
+/* Quiz Box */
+.quiz-box {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/* Card */
+.qcard {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.qcard p {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Options - Proper alignment */
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.option:hover {
+  background: #e3f2fd;
+  border-color: #2196f3;
+}
+
+/* Radio button styling */
+.option input[type="radio"] {
+  margin: 0;
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #4CAF50;
+  flex-shrink: 0;
+}
+
+/* Radio button label text */
+.option span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Correct answer styling */
+.correct {
+  background: #c8f7d1 !important;
+  border: 2px solid #4CAF50 !important;
+}
+
+.correct span {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* Wrong answer styling */
+.wrong {
+  background: #ffebee !important;
+  border: 2px solid #f44336 !important;
+}
+
+.wrong span {
+  color: #c62828;
+  font-weight: 500;
+}
+
+/* Error Message */
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px 0;
+  text-align: center;
+  border: 1px solid #ef9a9a;
+  font-weight: bold;
+}
+
+/* Disabled radio button */
+.option input[type="radio"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #45a049;
+  transform: translateY(-1px);
+}
+
+.btn2 {
+  width: 100%;
+  padding: 14px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn2:hover {
+  background: #da190b;
+  transform: translateY(-1px);
+}
+
+/* Result */
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #2196f3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quiz-box {
+    width: 95%;
+  }
+  
+  .option {
+    padding: 8px 12px;
+  }
+  
+  .option span {
+    font-size: 14px;
+  }
+  
+  .qcard p {
+    font-size: 14px;
+  }
+  
+  .timerBox {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #fff7c2, #ffe6f0, #d7f8ff);
+}
+
+/* Navbar */
+.navbar {
+  text-align: center;
+  padding: 12px;
+  background: white;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  margin: 8px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar .active {
+  background: #219ebc;
+  color: white;
+  border-radius: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 25px;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Boxes */
+.box {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Image box */
+.image-box {
+  text-align: center;
+}
+
+.image-box img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+/* Calculator */
+.calc input {
+  padding: 8px;
+  margin: 5px;
+  width: 150px;
+}
+
+.calc button {
+  padding: 8px 15px;
+  background: #219ebc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calc button:hover {
+  background: #1b7f99;
+}
+
+/* Back button */
+.back-nav {
+  text-align: center;
+  margin: 20px;
+}
+
+.back-nav a {
+  background: #219ebc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 12px;
+  background: rgba(0,0,0,0.05);
+}
